@@ -1,2 +1,2 @@
-# AI-
-AI-Projects Basic to Scratch Learning 
+# AI Resume Optimiser & Generator 
+ 
