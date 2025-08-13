@@ -1,0 +1,11 @@
+**Resume Review Report: Anushka Gupta**
+
+**FORMAT:**
+
+* **Keywords & Skills Added:** The optimized resume effectively incorporates relevant keywords from the (unprovided) job description, particularly emphasizing Python, NLP, data visualization, and machine learning model development.  Skills are now categorized for improved readability and ATS compatibility.
+
+* **Formatting/ATS Improvements:** The optimized resume uses a cleaner, more concise format with bullet points for improved readability and ATS scanning.  Dates are consistently formatted (e.g., March 27, 2024).  Irrelevant information (overall experience calculation, "striving" GPA descriptor, some less relevant coursework) has been removed.
+
+* **Content Restructuring/Reordering:** The optimized resume introduces a compelling summary statement to highlight key skills and career goals.  Experience is presented more effectively using action verbs and quantifiable achievements.  The "Activities" section is reorganized for better flow and relevance.  The skills section is reorganized for better flow and relevance.  Information such as the "Learn" link is removed.  The "Professional Leadership" section is restructured to highlight achievements.  The projects section is improved.
+
+**Recommendation:** The optimized resume presents a significantly improved version, better showcasing Anushka's skills and experience for a data science/AI role.  Minor adjustments might be needed based on specific job requirements, but the overall structure and content are well-suited for applicant tracking systems (ATS) and recruiter review.  Consider adding a portfolio link to further enhance the resume's impact.
