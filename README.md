@@ -1,57 +1,92 @@
-# AI Resume Optimiser & Generator
+# AI Resume Optimiser & Generator (ATS-Friendly)
 
-A **Streamlit app** that optimises resumes to be ATS-friendly and tailored to specific job descriptions. It analyses your resume, extracts keywords, and produces a **refined DOCX resume** along with a **change log** highlighting improvements.
+🧠 **AI-powered tool to optimise resumes for Applicant Tracking Systems (ATS)**
+
+This Streamlit app helps candidates improve their resumes for specific job descriptions by:
+
+* Parsing PDF or DOCX resumes
+* Extracting and aligning keywords from resumes and job descriptions
+* Generating an ATS-friendly, optimised resume (DOCX)
+* Producing a concise change log highlighting improvements (keywords, formatting, ATS checks)
 
 ---
 
 ## Features
 
-* Upload resume in **PDF or DOCX** format
-* Input job description via **text paste or file upload**
-* Extracts and aligns **keywords** with the job description
-* Generates **ATS-optimised resume** in DOCX format
-* Produces a **concise change log** (keywords, formatting, ATS checks)
+* ✅ Accepts **PDF and DOCX** resumes
+* ✅ Keyword alignment with target Job Description (JD)
+* ✅ Reorders experience and skills for maximum relevance
+* ✅ Injects missing high-value skills into resume
+* ✅ Produces **change log** showing ATS improvements
+* ✅ Downloadable optimised resume
 
 ---
 
-## Installation & Running
+## Installation & Setup
 
-1. Clone the repository
-2. Create and activate a virtual environment (Python 3.10+)
-3. Install dependencies:
+### Requirements
+
+* Python 3.10+
+* Packages (install via pip):
 
 ```bash
-pip install -r requirements.txt
+pip install streamlit pdfplumber python-docx scikit-learn nltk rapidfuzz
 ```
 
-4. Run the app:
+Optional (for advanced NLP):
 
 ```bash
+pip install spacy
+python -m spacy download en_core_web_sm
+```
+
+### Run Locally
+
+```bash
+# Clone the repository
+git clone <repository_url>
+cd <repository_folder>
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Streamlit app
 streamlit run main.py
 ```
 
-5. Open the local URL in your browser (default: `http://localhost:8501`)
+---
+
+## Usage
+
+1. Upload your **resume** (PDF or DOCX).
+2. Paste or upload the **job description**.
+3. Click **“Optimise Resume”**.
+4. Download your **ATS-ready resume** and view the **change log**.
+
+---
+
+## Project Structure
+
+```
+AI-Resume-Optimiser/
+│
+├─ main.py              # Streamlit app
+├─ accuracy_check.py    # Optional script to evaluate keyword alignment accuracy
+├─ requirements.txt     # Python dependencies
+├─ README.md            # Project documentation
+└─ utils/               # Helper functions (parsing, keyword extraction, etc.)
+```
 
 ---
 
 ## Notes
 
-* Focused on **ATS-friendly text**, avoiding tables/images.
-* Keeps consistent section headers: `Summary`, `Skills`, `Experience`, `Projects`, `Education`.
-* Injects missing **JD keywords** into Skills.
-* Reorders Experience bullets by **relevance to JD**.
+* Focuses on **ATS-friendly text**: avoid tables/images; simple layout.
+* Supports **PDF and DOCX** formats (convert `.doc` to `.docx`).
+* Generates summaries and skills sections tailored to the job description.
 
 ---
 
-## Dependencies
+## License
 
-* `streamlit`
-* `pdfplumber`
-* `python-docx`
-* `scikit-learn`
-* `nltk`
-* `rapidfuzz`
-
-Optional: `spacy` for advanced NLP
-
-If you want, I can also **write a 3–4 line project description** suitable for your GitHub portfolio homepage. Do you want me to do that?
+MIT License ©
